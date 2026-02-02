@@ -7,7 +7,6 @@
   line-height: 20px;
 }
 
-/* HEADER */
 .header {
   height: 100vh;
   min-height: 720px;
@@ -42,7 +41,7 @@
 }
 
 .nav__link {
-  color: #000;
+  color: #454343;
   font-weight: 500;
   text-decoration: none;
   font-size: 16px;
@@ -115,7 +114,6 @@
   color: #838383;
 }
 
-/* STAFF */
 .staff {
   padding-top: 100px;
   padding-bottom: 140px;
@@ -197,7 +195,6 @@
   right: 40px;
 }
 
-/* EVENTS */
 .events {
   display: flex;
   justify-content: space-between;
