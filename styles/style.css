@@ -34,21 +34,23 @@
 
 .nav__links {
   display: flex;
-  column-gap: 20px;
-  list-style: none;
+  gap: 20px;
+  list-style-type: none;
+  margin-top: 0;
   padding: 0;
-  margin: 0;
 }
 
-.nav__link {
+.nav__link,
+.header__link {
   color: #000;
-  text-decoration: none;
   font-weight: 500;
+  text-decoration: none;
   font-size: 16px;
   line-height: 20px;
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.header__link:hover {
   color: #1f69c9;
 }
 
@@ -67,7 +69,7 @@
   font-size: 62px;
   line-height: 76px;
   font-weight: 500;
-  margin: 0;
+  margin-top: 0;
 }
 
 .header__description {
@@ -102,6 +104,7 @@
   color: #838383;
 }
 
+/* STAFF */
 .staff {
   padding-top: 100px;
   padding-bottom: 140px;
@@ -183,89 +186,7 @@
   right: 40px;
 }
 
-@media (max-width: 800px) {
-  .page {
-    min-width: auto;
-    width: 100%;
-  }
-
-  .header {
-    padding: 20px 20px 30px;
-    height: auto;
-    min-height: auto;
-    max-height: none;
-  }
-
-  .header__content {
-    flex-direction: column;
-    margin-top: 40px;
-  }
-
-  .header__title {
-    font-size: 40px;
-    line-height: 48px;
-  }
-
-  .header__description {
-    font-size: 18px;
-    line-height: 26px;
-  }
-
-  .header__footer {
-    position: relative;
-    bottom: auto;
-    padding: 20px;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-  }
-
-  .staff__cards {
-    width: 100%;
-    max-width: 360px;
-    gap: 30px;
-  }
-
-  .card {
-    width: 100%;
-    height: auto;
-    min-height: 420px;
-  }
-
-  .staff__title {
-    font-size: 36px;
-    line-height: 42px;
-    margin-bottom: 20px;
-  }
-
-  .staff__subtitle {
-    font-size: 18px;
-    line-height: 26px;
-    margin-bottom: 50px;
-  }
-}
-
-@media (max-width: 480px) {
-  .header__title {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  .card {
-    padding: 20px;
-  }
-
-  .card__title {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .card__text {
-    font-size: 15px;
-    line-height: 22px;
-  }
-}
-
+/* EVENTS */
 .events {
   display: flex;
   justify-content: space-between;
@@ -317,7 +238,8 @@
   margin-bottom: 2px;
 }
 
-.icon-calendar {
+.icon-calendar,
+.icon-pin {
   width: 16px;
   height: 16px;
 }
@@ -330,11 +252,6 @@
   margin-bottom: 35px;
 }
 
-.icon-pin {
-  width: 16px;
-  height: 16px;
-}
-
 .event-image {
   position: relative;
   width: 520px;
@@ -344,6 +261,7 @@
   width: 100%;
   display: block;
 }
+
 .pessoa {
   position: absolute;
   object-fit: cover;
@@ -355,24 +273,28 @@
   width: 85px;
   height: 85px;
 }
+
 .burbidge {
   top: 90px;
   right: 100px;
   width: 60px;
   height: 60px;
 }
+
 .cannon {
   bottom: 35px;
   right: 160px;
   width: 60px;
   height: 60px;
 }
+
 .mitchell {
   top: 260px;
   left: 100px;
   width: 50px;
   height: 50px;
 }
+
 .tarter {
   bottom: 250px;
   left: 115px;
