@@ -7,6 +7,7 @@
   line-height: 20px;
 }
 
+/* HEADER */
 .header {
   height: 100vh;
   min-height: 720px;
@@ -40,7 +41,18 @@
   padding: 0;
 }
 
-.nav__link,
+.nav__link {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.nav__link:hover {
+  color: #1f69c9;
+}
+
 .header__link {
   color: #000;
   font-weight: 500;
@@ -49,7 +61,6 @@
   line-height: 20px;
 }
 
-.nav__link:hover,
 .header__link:hover {
   color: #1f69c9;
 }
@@ -230,26 +241,26 @@
   font-weight: 600;
 }
 
-.event-date {
+.event-date,
+.event-location {
   display: flex;
   align-items: center;
   gap: 8px;
   font-weight: 500;
+}
+
+.event-date {
   margin-bottom: 2px;
+}
+
+.event-location {
+  margin-bottom: 35px;
 }
 
 .icon-calendar,
 .icon-pin {
   width: 16px;
   height: 16px;
-}
-
-.event-location {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 500;
-  margin-bottom: 35px;
 }
 
 .event-image {
