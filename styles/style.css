@@ -93,20 +93,6 @@
   max-width: 636px;
 }
 
-.header__footer {
-  position: absolute;
-  left: 0;
-  bottom: 40px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0 80px;
-  justify-content: space-between;
-  box-sizing: border-box;
-  font-weight: 500;
-  color: #838383;
-}
-
 .header__address {
   margin: 0;
   font-size: 16px;
