@@ -60,6 +60,10 @@
   line-height: 20px;
 }
 
+.header__link:hover {
+  color: #1f69c9;
+}
+
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -273,6 +277,7 @@
     line-height: 22px;
   }
 }
+
 .events {
   display: flex;
   justify-content: space-between;
