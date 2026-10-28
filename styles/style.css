@@ -15,10 +15,6 @@
   position: relative;
   box-sizing: border-box;
   background-color: #fff;
-  background-image: url("../images/background_header.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .nav {
@@ -34,24 +30,13 @@
 
 .nav__links {
   display: flex;
-  column-gap: 20px;
-  list-style: none;
+  gap: 20px;
+  list-style-type: none;
+  margin-top: 0;
   padding: 0;
-  margin: 0;
 }
 
-.nav__link {
-  color: #000;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.nav__link:hover {
-  color: #1f69c9;
-}
-
+.nav__link,
 .header__link {
   color: #000;
   font-weight: 500;
@@ -60,6 +45,7 @@
   line-height: 20px;
 }
 
+.nav__link:hover,
 .header__link:hover {
   color: #1f69c9;
 }
@@ -79,7 +65,7 @@
   font-size: 62px;
   line-height: 76px;
   font-weight: 500;
-  margin: 0;
+  margin-top: 0;
 }
 
 .header__description {
@@ -94,12 +80,17 @@
 }
 
 .header__footer {
-  margin-top: auto;
+  position: absolute;
+  left: 0;
+  bottom: 40px;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  padding: 0 80px;
+  justify-content: space-between;
   box-sizing: border-box;
+  font-weight: 500;
+  color: #838383;
 }
 
 .header__address {
@@ -109,6 +100,7 @@
   color: #838383;
 }
 
+/* STAFF */
 .staff {
   padding-top: 100px;
   padding-bottom: 140px;
@@ -190,146 +182,44 @@
   right: 40px;
 }
 
-@media (max-width: 800px) {
-  .page {
-    min-width: auto;
-    width: 100%;
-  }
-
-  .header {
-    padding: 20px 20px 30px;
-    height: auto;
-    min-height: auto;
-    max-height: none;
-  }
-
-  .header__content {
-    flex-direction: column;
-    margin-top: 40px;
-  }
-
-  .header__title {
-    font-size: 40px;
-    line-height: 48px;
-  }
-
-  .header__description {
-    font-size: 18px;
-    line-height: 26px;
-  }
-
-  .header__footer {
-    position: relative;
-    bottom: auto;
-    padding: 20px;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-  }
-
-  .staff__cards {
-    width: 100%;
-    max-width: 360px;
-    gap: 30px;
-  }
-
-  .card {
-    width: 100%;
-    height: auto;
-    min-height: 420px;
-  }
-
-  .staff__title {
-    font-size: 36px;
-    line-height: 42px;
-    margin-bottom: 20px;
-  }
-
-  .staff__subtitle {
-    font-size: 18px;
-    line-height: 26px;
-    margin-bottom: 50px;
-  }
-}
-
-@media (max-width: 480px) {
-  .header__title {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  .card {
-    padding: 20px;
-  }
-
-  .card__title {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .card__text {
-    font-size: 15px;
-    line-height: 22px;
-  }
-}
-
+/* EVENTS — Etapa 2 */
 .events {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 10%;
+  gap: 24px;
+  padding: 80px;
   background-color: #f2f2f2;
-  gap: 80px;
+  box-sizing: border-box;
 }
 
-.event-info {
-  max-width: 520px;
+.events__content {
+  width: 520px;
+  flex-shrink: 0;
 }
 
-.event-label {
-  font-size: 16px;
-  color: #090909;
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-}
-
-.event-info h2 {
-  font-size: 36px;
-  line-height: 1.25;
-  margin-bottom: 35px;
-  font-family: "Poppins", sans-serif;
+.events__label {
+  margin: 0 0 32px;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: 500;
 }
 
-.event-info p {
-  font-size: 16px;
-  margin-top: 0;
-  color: #090909;
+.events__title {
+  margin: 0 0 32px;
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 500;
 }
 
-.event-info a {
-  display: inline-block;
-  margin-top: 30px;
-  text-decoration: none;
-  color: #007bff;
-  font-weight: 600;
-}
-
-.event-date,
-.event-location {
+.events__date,
+.events__location {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-weight: 500;
-}
-
-.event-date {
-  margin-bottom: 2px;
-}
-
-.event-location {
-  margin-bottom: 35px;
+  margin: 0 0 8px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .icon-calendar,
@@ -338,92 +228,88 @@
   height: 16px;
 }
 
-.event-image {
+.events__description {
+  margin: 40px 0 60px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.events__link {
+  color: #2f80ed;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.events__cover {
   position: relative;
-  width: 520px;
+  width: 720px;
+  flex-shrink: 0;
 }
 
-.imagem-base {
-  width: 100%;
+.events__image {
   display: block;
+  width: 100%;
 }
 
-.pessoa {
+.person {
   position: absolute;
-  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
 }
 
-.feynman {
-  top: 5px;
-  left: 210px;
-  width: 85px;
-  height: 85px;
-}
-
-.burbidge {
-  top: 90px;
-  right: 100px;
-  width: 60px;
-  height: 60px;
-}
-
-.cannon {
-  bottom: 35px;
-  right: 160px;
-  width: 60px;
-  height: 60px;
-}
-
-.mitchell {
-  top: 260px;
-  left: 100px;
-  width: 50px;
-  height: 50px;
-}
-
-.tarter {
-  bottom: 250px;
-  left: 115px;
-  width: 60px;
-  height: 60px;
-}
-
-.person-name {
-  position: absolute;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 10px;
-  color: #000;
+.person__caption {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
   text-align: center;
   white-space: nowrap;
 }
 
-.person-name.top.feynman {
+.person__image {
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.person__image_size_s {
+  width: 80px;
+  height: 80px;
+}
+
+.person__image_size_m {
+  width: 100px;
+  height: 100px;
+}
+
+.person__image_size_l {
+  width: 140px;
+  height: 140px;
+}
+
+.person_name_feynman {
   top: -30px;
-  left: 210px;
-  width: 85px;
+  left: 319px;
 }
 
-.person-name.top.burbidge {
-  top: 55px;
-  right: 110px;
-  width: 60px;
+.person_name_tarter {
+  top: 79px;
+  left: 159px;
 }
 
-.person-name.top.tarter {
-  bottom: 260px;
-  left: 115px;
-  width: 60px;
+.person_name_burbidge {
+  top: 96px;
+  right: 125px;
 }
 
-.person-name.bottom.cannon {
-  bottom: -45px;
-  right: 175px;
-  width: 60px;
+.person_name_mitchell {
+  bottom: 82px;
+  left: 142px;
 }
 
-.person-name.bottom.mitchell {
-  top: 300px;
-  left: 90px;
-  width: 50px;
+.person_name_cannon {
+  bottom: 18px;
+  right: 216px;
 }
