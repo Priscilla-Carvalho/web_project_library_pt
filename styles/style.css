@@ -32,11 +32,18 @@
   display: flex;
   gap: 20px;
   list-style-type: none;
-  margin-top: 0;
+  margin: 0;
   padding: 0;
 }
 
-.nav__link,
+.nav__link {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .header__link {
   color: #000;
   font-weight: 500;
@@ -65,7 +72,7 @@
   font-size: 62px;
   line-height: 76px;
   font-weight: 500;
-  margin-top: 0;
+  margin: 0;
 }
 
 .header__description {
